@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="icon" href="favicon.ico"/>
+            <title>Thaís' Cave</title>
+        
+    </head>
+
+    <body>
+            <div>
+                    <h1><a href="/">Blog teste</a></h1>
+                </div>
+            {% for post in posts %}
+            <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+    </body>
+
